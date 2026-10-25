@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons</title>
+  </head>
+  <body>
+    <main class="page">
+      <header class="page-header">
+        <a class="back" href="../../">← All experiments</a>
+        <h1></h1>
+        <p class="lead">
+          Hover and press each button. Tune them in the panel, press <kbd>S</kbd> for slow motion,
+          then copy the values.
+        </p>
+      </header>
+
+      <section class="variants">
+        <article class="variant">
+          <div class="stage">
+            <div class="magnetic-zone">
+              <button class="btn magnetic" type="button"><span class="label">Magnetic</span></button>
+            </div>
+          </div>
+          <div class="variant-info">
+            <h2>magnetic</h2>
+            <p>Leans toward the cursor before you reach it and springs back when you leave.</p>
+          </div>
+        </article>
+
+        <article class="variant">
+          <div class="stage">
+            <button class="btn liquid" type="button">
+              <span class="liquid-fill"></span>
+              <span class="label">Liquid fill</span>
+            </button>
+          </div>
+          <div class="variant-info">
+            <h2>liquid</h2>
+            <p>Fills from where the cursor came in and drains toward where it left.</p>
+          </div>
+        </article>
+
+        <article class="variant">
+          <div class="stage">
+            <button class="btn squish" type="button"><span class="label">Squish</span></button>
+          </div>
+          <div class="variant-info">
+            <h2>squish</h2>
+            <p>Lifts on hover, flattens when held, bounces back on release. Works with Space too.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

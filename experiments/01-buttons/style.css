@@ -1,0 +1,64 @@
+.variants {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.variant {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.stage {
+  display: grid;
+  place-items: center;
+  height: 260px;
+  border-bottom: 1px solid var(--line);
+}
+
+.variant-info {
+  padding: 16px 20px 20px;
+}
+
+.variant-info h2 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-weight: 500;
+}
+
+.variant-info p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Padding is set from the panel: it is the invisible area where the pull starts. */
+.magnetic-zone {
+  display: inline-block;
+}
+
+.liquid {
+  --liquid-ink-idle: var(--ink);
+  --liquid-ink-filled: var(--accent-ink);
+
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.liquid-fill {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--accent);
+  transform: scale(0);
+  pointer-events: none;
+}
+
+.squish {
+  background: var(--accent);
+  border-color: transparent;
+  color: var(--accent-ink);
+}
